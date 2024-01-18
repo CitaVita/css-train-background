@@ -3,7 +3,7 @@
 }
 
 .task2 {
-  background-image: url("img/img-400x200.jpg")
+  background-image: url("/public/img/img-400x200.jpg")
 
 }
 
@@ -91,8 +91,7 @@ background: radial-gradient(ellipse, rgba(1,135,166,1) 1%, rgba(235,248,225,1) 3
 
 .task19 {
   background-image: url('/img/img-400x200.jpg');
-  background-repeat: repeat;
-  background-size: 100px;
+  background-position: 100px;
 
 }
 
@@ -142,8 +141,9 @@ background: radial-gradient(ellipse, rgba(1,135,166,1) 1%, rgba(235,248,225,1) 3
   font-weight: 900;
   color: transparent;
 
-  .text.webkit-
-   i have to continue from 27
+   -webkit-background-clip: text;
+   background-clip: text;
+   
 
 
 
@@ -154,7 +154,7 @@ background: radial-gradient(ellipse, rgba(1,135,166,1) 1%, rgba(235,248,225,1) 3
   box-sizing: border-box;
   border: 20px dashed black;
   background-repeat: no-repeat;
-  padding-box: 
+  background-origin: border-box; 
 }
 
 .task29 {
@@ -163,7 +163,7 @@ background: radial-gradient(ellipse, rgba(1,135,166,1) 1%, rgba(235,248,225,1) 3
   border: 20px dashed black;
   padding: 20px;
   background-repeat: no-repeat;
-  border-box
+  background-origin: padding-box; 
 }
 
 .task30 {
@@ -174,21 +174,20 @@ background: radial-gradient(ellipse, rgba(1,135,166,1) 1%, rgba(235,248,225,1) 3
   font-size: 100px;
   font-weight: 900;
   padding: 60px;
-  text;
+  background-origin: content-box; 
 }
 
 .task31 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
-  background: linear-gradient(0deg, rgba(20,53,151,1) 8%, rgba(153,202,133,1) 44%, rgba(6,117,50,1) 77%);
+  border-image-source: linear-gradient(blue, green);
 }
-
 .task32 {
   border-image-slice: 1%;
   border-image-width: 40px;
   box-sizing: border-box;
-  background: radial-gradient(red 5%, green 15%, blue 60%);
+  border-image-source: radial-gradient(red 5%, green 15%, blue 60%);
 }
 
 .task33 {
@@ -196,5 +195,5 @@ background: radial-gradient(ellipse, rgba(1,135,166,1) 1%, rgba(235,248,225,1) 3
   box-sizing: border-box;
   border-image-width: 40px;
   border-image-slice: 10;
-  background-repeat: space;
+  border-image-repeat: stretch;
 }
